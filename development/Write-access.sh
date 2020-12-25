@@ -1,6 +1,6 @@
 #!/bin/bash
 full_name=$1
-curl -XPOST --user "svastikkkka:quwmaw-8beNni-tizxet" -H "Content-Type: application/json" -d '       {
+curl -XPOST --user "${credential}" -H "Content-Type: application/json" -d '       {
          "kind":"push",
          "users":[
             {
