@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Starting Fetching all JSON data"
 
-WORKSPACE=([0]="usthaan-DevOps")
+WORKSPACE=([0]="svastikkka")
 for i in ${WORKSPACE[@]}; 
 do 
     #FETCH REPOS
