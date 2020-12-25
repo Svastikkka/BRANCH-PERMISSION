@@ -1,1 +1,2 @@
-# Branch-Permission
+## Branch-Permission
+Branch permissions allow you to control the actions users can perform on a single branch, branch type, or branch pattern within a repository. ... are used to limit branch access to specific people, or services, that still need write access to the project or repository.
