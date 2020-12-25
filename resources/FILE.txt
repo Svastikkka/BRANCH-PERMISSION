@@ -1,0 +1,30 @@
+Key:- kk4FM6nJV67jXVgEsz
+Secret:- 9eDuabCwKTRtw7gKNfWBVKUhDSwKd8TF
+
+
+[Sample URL Imp links: Get access_token]
+https://bitbucket.org/site/oauth2/authorize?client_id=%7BCLIENT_KEY%7D&response_type=token
+
+[ACTUAL URL]
+https://bitbucket.org/site/oauth2/authorize?client_id=TGrvErPLHURvshbkaY&response_type=token
+
+
+[Sample Get username:]
+https://bitbucket.org/svastikkkka/workspace/settings/oauth-consumers#access_token=1lDWbLXVWJ1pKYmVjP_J2EkTlbK_wrFLtYxq8vVtHbXNA4KACo4Iyp5HLbOwGDas2B5R-F8aKMjd0ThBENWC2Q2xvGyd0FbxKc8TglYet6beczg-iZv0bUaf&scopes=webhook+account+project%3Awrite+pipeline+repository%3Awrite+pullrequest&expires_in=7200&token_type=bearer
+
+
+
+access_token=1lDWbLXVWJ1pKYmVjP_J2EkTlbK_wrFLtYxq8vVtHbXNA4KACo4Iyp5HLbOwGDas2B5R-F8aKMjd0ThBENWC2Q2xvGyd0FbxKc8TglYet6beczg-iZv0bUaf&
+
+
+https://bitbucket.org/!api/2.0/user?access_token=1lDWbLXVWJ1pKYmVjP_J2EkTlbK_wrFLtYxq8vVtHbXNA4KACo4Iyp5HLbOwGDas2B5R-F8aKMjd0ThBENWC2Q2xvGyd0FbxKc8TglYet6beczg-iZv0bUaf&
+
+
+"username":"Svastikkka"
+
+https://bitbucket.org/!api/2.0/repositories/Svastikkkka?access_token=1lDWbLXVWJ1pKYmVjP_J2EkTlbK_wrFLtYxq8vVtHbXNA4KACo4Iyp5HLbOwGDas2B5R-F8aKMjd0ThBENWC2Q2xvGyd0FbxKc8TglYet6beczg-iZv0bUaf&
+
+
+
+
+
