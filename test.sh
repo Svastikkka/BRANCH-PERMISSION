@@ -46,16 +46,16 @@ do
                 bash ./development/Check-the-last-commit-for-at-least-1-successful-build-and-no-failed-builds.sh $j
 
             fi
-        # Please ignore this if
-        if [ "$k" != "development"  ] && [ "$k" != "master"  ];
-        then
-            #OTHER
-            bash ./other/Check-for-at-least-1-approval.sh $j
-            bash ./other/Check-for-unresolved-pull-request-tasks.sh $j
-            bash ./other/Check-the-last-commit-for-at-least-1-successfud-build-and-no-failed-builds.sh $j
-            bash ./other/Deleting-this-branch-is-not-allowed.sh $j
-            bash ./other/Rewriting-branch-history-is-not-allowed.sh $j
-        fi
+            # Please ignore this if
+            if [ "$k" != "development"  ] && [ "$k" != "master"  ];
+            then
+                #OTHER
+                bash ./other/Check-for-at-least-1-approval.sh $j
+                bash ./other/Check-for-unresolved-pull-request-tasks.sh $j
+                bash ./other/Check-the-last-commit-for-at-least-1-successfud-build-and-no-failed-builds.sh $j
+                bash ./other/Deleting-this-branch-is-not-allowed.sh $j
+                bash ./other/Rewriting-branch-history-is-not-allowed.sh $j
+            fi
         done
     done
 done
