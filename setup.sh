@@ -1,6 +1,9 @@
 #!/bin/bash
 echo "Starting Fetching all JSON data"
-WORKSPACE=([0]="svastikkka")
+WORKSPACE=([0]="usthaan-DevOps")
+# 
+#test.sh is use for when we want add same credential to all other branches seprately
+#
 for i in ${WORKSPACE[@]}; 
 do 
     count=1
@@ -30,12 +33,13 @@ do
                 then
                     if  grep -F  "development" branches.json;
                     then
-                        echo "$branch is found"
+                        echo "development branch  is found"
                         bash ./master/Check-the-last-commit-for-at-least-1-successful-build-and-no-failed-builds.sh $j
                         bash ./master/Merge-via-pull-request.sh $j
                         bash ./master/Write-access-none.sh $j
                         bash ./master/Deleting-this-branch-is-not-allowed.sh $j
                     else
+                        echo "development branch  is not  found"
                         bash ./master/Merge-via-pull-request-everyone.sh $j
                         bash ./master/Check-the-last-commit-for-at-least-1-successful-build-and-no-failed-builds.sh $j
                         bash ./master/Write-access-devops.sh $j
@@ -55,11 +59,11 @@ do
                 fi
   
                 #OTHER
-                bash ./other/Check-for-at-least-1-approval.sh "$j" 
-                bash ./other/Check-for-unresolved-pull-request-tasks.sh "$j"
+                bash ./other/Check-for-at-least-1-approval.sh "$j" "$k"
+                bash ./other/Check-for-unresolved-pull-request-tasks.sh "$j" "$k"
                 bash ./other/Check-the-last-commit-for-at-least-1-successfud-build-and-no-failed-builds.sh "$j" "$k"
                 #bash ./other/Deleting-this-branch-is-not-allowed.sh $j
-                bash ./other/Rewriting-branch-history-is-not-allowed.sh "$j"
+                bash ./other/Rewriting-branch-history-is-not-allowed.sh "$j" "$k"
             done
         done
         echo "$count"
