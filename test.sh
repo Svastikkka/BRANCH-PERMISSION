@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting Fetching all JSON data"
-WORKSPACE=([0]="usthaan-DevOps")
+WORKSPACE=([0]="svastikkka")
 # 
 #test.sh is use for when we want add same credential to all other branches seprately
 #
