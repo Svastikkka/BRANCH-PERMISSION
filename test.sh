@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting Fetching all JSON data"
-WORKSPACE=([0]="svastikkka")
+WORKSPACE=([0]="svastikkka") #need to add file to store workspace name
 # 
 #test.sh is use for when we want add same credential to all other branches seprately
 #
