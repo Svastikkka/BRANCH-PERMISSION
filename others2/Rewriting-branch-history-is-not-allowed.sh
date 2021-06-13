@@ -1,10 +1,10 @@
 full_name=$1
 branch=$2
-if  [ "$branch" != "master" ] && [ "$branch" != "development"  ] && [[ $branch =~ ^([A-Z]+-[0-9]+) ]];
+if  [ "$branch" != "master" ] && [ "$branch" != "development"  ];
    then
       echo $branch
       curl -XPOST --user "${credential}" -H "Content-Type: application/json" -d '      {
-               "kind":"delete",
+               "kind":"force",
                "users":[
                   
                ],
