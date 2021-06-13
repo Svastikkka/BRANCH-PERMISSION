@@ -33,4 +33,4 @@ curl -XPOST --user "${credential}" -H "Content-Type: application/json" -d '     
          "groups":[
             
          ]
-      }' https://api.bitbucket.org/2.0/repositories/$full_name/branch-restrictions
+     }' https://api.bitbucket.org/2.0/repositories/$full_name/branch-restrictions
