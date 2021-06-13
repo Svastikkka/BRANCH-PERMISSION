@@ -12,4 +12,4 @@ Example:- ``` curl -u "USERNAME:PASSWORD" "https://api.bitbucket.org/2.0/reposit
 curl -u "USERNAME:PASSWORD"  "https://api.bitbucket.org/2.0/repositories/{workspace}/{repo_slug}/branch-restrictions/{id}"
 ```
 
-Example:- ``` curl -u "USERNAME:PASSWORD"  "https://api.bitbucket.org/2.0/repositories/uSthaan-DevOps/testing/branch-restrictions" ```
+Example:- ``` curl -u "USERNAME:PASSWORD"  "https://api.bitbucket.org/2.0/repositories/WORKSPACE/testing/branch-restrictions" ```
